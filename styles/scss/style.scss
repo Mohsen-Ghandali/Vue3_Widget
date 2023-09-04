@@ -1,0 +1,127 @@
+@import "./vars";
+@import "./mixins.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-color;
+  font-family: Arial, sans-serif;
+  color: $text-color;
+}
+
+#app {
+  width: 100%;
+
+  >h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  >h3 {
+    margin-top: 16px;
+    text-align: center;
+    color: $secondary-color;
+  }
+
+  div.container {
+    width: 90%;
+    margin: 50px auto 32px auto;
+    padding: 24px 32px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+    h2 {
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    div.btn {
+      text-align: center;
+    }
+  }
+
+  div.btnSh {
+    text-align: center;
+  }
+
+  button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5rem;
+    margin-bottom: 24px;
+  }
+
+  .loader {
+    text-align: center;
+
+    img {
+      width: 100px;
+      margin-top: 12px;
+    }
+  }
+
+  hr {
+    margin: 32px auto 0 auto;
+    width: 80%;
+  }
+
+  // ==================Event=====================
+  .box {
+    width: 90%;
+    margin: 50px auto;
+    padding: 50px 32px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+// ==================Responsive=====================
+
+@include respond-to(small) {
+
+  #app div.container,
+  #app .box {
+    width: 80%;
+  }
+
+}
+
+@include respond-to(medium) {
+
+  #app div.container,
+  #app .box {
+    width: 65%;
+  }
+
+}
+
+@include respond-to(large) {
+
+  #app div.container,
+  #app .box {
+    width: 50%;
+  }
+
+}

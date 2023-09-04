@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  color: #272727;
+}
+
+#app {
+  width: 100%;
+}
+#app > h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+#app > h3 {
+  margin-top: 16px;
+  text-align: center;
+  color: #0056b3;
+}
+#app div.container {
+  width: 90%;
+  margin: 50px auto 32px auto;
+  padding: 24px 32px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+#app div.container h2 {
+  text-align: center;
+  margin-top: 8px;
+}
+#app div.container div.btn {
+  text-align: center;
+}
+#app div.btnSh {
+  text-align: center;
+}
+#app button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#app button:hover {
+  background-color: #0056b3;
+}
+#app p {
+  font-size: 16px;
+  line-height: 1.5rem;
+  margin-bottom: 24px;
+}
+#app .loader {
+  text-align: center;
+}
+#app .loader img {
+  width: 100px;
+  margin-top: 12px;
+}
+#app hr {
+  margin: 32px auto 0 auto;
+  width: 80%;
+}
+#app .box {
+  width: 90%;
+  margin: 50px auto;
+  padding: 50px 32px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  #app div.container,
+  #app .box {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  #app div.container,
+  #app .box {
+    width: 65%;
+  }
+}
+@media (min-width: 1200px) {
+  #app div.container,
+  #app .box {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

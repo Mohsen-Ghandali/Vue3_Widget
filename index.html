@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue.3</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <link rel="stylesheet" href="./styles/css/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>Vue.3 - Widget</h1>
+      <h3>
+        v-on:click ** @click ** v-show ** v-if ** v-else ** @dblclick **
+        @mouseover ** @mouseleave ** @mousemove
+      </h3>
+
+      <div class="container" v-if="showContainer">
+        <h2>{{users}}</h2>
+        <hr />
+        <br />
+        <p><b>Username:</b> {{userName}}</p>
+        <p><b>Email: </b>{{emailUser}}</p>
+        <p><b>Age: </b>{{age}}</p>
+        <div class="btn">
+          <button v-on:click="age--">Decrease age</button>
+          <button v-on:click="age++">Increase age</button>
+          <button @click="reset">Reset age</button>
+          <button @click="changeEmail('a__m@yahoo.com')">
+            Change Email
+          </button>
+        </div>
+      </div>
+      <div class="loader" v-show="!showContainer">
+        <img src="./assets/loader.gif" alt="loader" />
+        <p>
+          Please press to show the user...
+        </p>
+      </div>
+      <div class="btnSh">
+        <button @click="hideBtn">
+          <span v-if="showContainer">Hide user</span>
+          <span v-if="!showContainer">Show user</span>
+          <!-- <span v-else>Show user</span> -->
+        </button>
+      </div>
+      <hr />
+
+      <div class="box" @mouseover="handleMouseOver">
+        <p><b>Mouse over:</b></p>
+        <p v-show="mouseOver">Please mouse-over again...</p>
+      </div>
+
+      <div class="box" @mouseleave="handleMouseLeave">
+        <p><b>Mouse leave:</b></p>
+        <p v-show="mouseLeave">Please mouse-leave again...</p>
+      </div>
+
+      <div class="box" @dblclick="handleDoubleClick">
+        <p><b>Double-click:</b></p>
+        <p v-show="doubleClick">Please double-click again...</p>
+      </div>
+
+      <div class="box" @mousemove="handleMouseMove">
+        <p>
+          <b>Mouse move: <br /><br /> </b> X: {{x}} <br />
+          Y: {{y}}
+        </p>
+      </div>
+    </div>
+
+    <script src="./javaScript/app.js"></script>
+  </body>
+</html>
