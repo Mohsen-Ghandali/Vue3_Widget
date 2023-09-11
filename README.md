@@ -3,4 +3,5 @@
 || v-onclicke || @click || v-show || v-if || v-else || @dblclick || @mouseover || @mouseleave || @mousemove || </br></br>
 <b>Responsive</b>
 <br/><br/>
-![Vue3_Widget_SASS](https://github.com/Mohsen-Ghandali/Vue3_Widget_SASS/blob/master/Vue.3%20-%20Widget.png?raw=true)
+
+https://github.com/Mohsen-Ghandali/Vue3_Widget_SASS/assets/84251780/cbba48d9-ff30-4de5-ab9a-35a6969fe5c3
